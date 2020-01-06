@@ -1,0 +1,63 @@
+object Form6: TForm6
+  Left = 620
+  Height = 136
+  Top = 382
+  Width = 199
+  BorderStyle = bsDialog
+  ClientHeight = 136
+  ClientWidth = 199
+  LCLVersion = '1.2.6.0'
+  object Button1: TButton
+    Left = 32
+    Height = 25
+    Top = 64
+    Width = 128
+    Caption = 'Internet Explorer'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 32
+    Height = 25
+    Top = 40
+    Width = 128
+    Caption = 'Mozilla Firefox'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 32
+    Height = 25
+    Top = 16
+    Width = 128
+    Caption = 'Google Chrome'
+    OnClick = Button3Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 196
+    Caption = 'Каким браузером ты пользуешься?'
+    ParentColor = False
+  end
+  object Button4: TButton
+    Left = 32
+    Height = 25
+    Top = 112
+    Width = 128
+    Caption = 'Другой'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 32
+    Height = 25
+    Top = 88
+    Width = 128
+    Caption = 'Opera'
+    OnClick = Button5Click
+    TabOrder = 3
+  end
+end

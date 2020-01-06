@@ -1,0 +1,760 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  ComCtrls, StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    CheckBox7: TCheckBox;
+    Image1: TImage;
+    Image10: TImage;
+    Image11: TImage;
+    Image12: TImage;
+    Image13: TImage;
+    Image14: TImage;
+    Image15: TImage;
+    Image16: TImage;
+    Image17: TImage;
+    Image18: TImage;
+    Image19: TImage;
+    Image2: TImage;
+    Image20: TImage;
+    Image21: TImage;
+    Image22: TImage;
+    Image23: TImage;
+    Image24: TImage;
+    Image25: TImage;
+    Image26: TImage;
+    Image27: TImage;
+    Image28: TImage;
+    Image29: TImage;
+    Image3: TImage;
+    Image30: TImage;
+    Image31: TImage;
+    Image32: TImage;
+    Image33: TImage;
+    Image34: TImage;
+    Image35: TImage;
+    Image36: TImage;
+    Image37: TImage;
+    Image38: TImage;
+    Image39: TImage;
+    Image4: TImage;
+    Image40: TImage;
+    Image41: TImage;
+    Image42: TImage;
+    Image43: TImage;
+    Image44: TImage;
+    Image45: TImage;
+    Image46: TImage;
+    Image47: TImage;
+    Image48: TImage;
+    Image49: TImage;
+    Image5: TImage;
+    Image6: TImage;
+    Image7: TImage;
+    Image8: TImage;
+    Image9: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Memo1: TMemo;
+    ProgressBar1: TProgressBar;
+    Timer1: TTimer;
+    Timer10: TTimer;
+    Timer11: TTimer;
+    Timer12: TTimer;
+    Timer13: TTimer;
+    Timer14: TTimer;
+    Timer15: TTimer;
+    Timer16: TTimer;
+    Timer17: TTimer;
+    Timer18: TTimer;
+    Timer19: TTimer;
+    Timer2: TTimer;
+    Timer20: TTimer;
+    Timer21: TTimer;
+    Timer22: TTimer;
+    Timer23: TTimer;
+    Timer24: TTimer;
+    Timer25: TTimer;
+    Timer26: TTimer;
+    Timer27: TTimer;
+    Timer3: TTimer;
+    Timer4: TTimer;
+    Timer5: TTimer;
+    Timer6: TTimer;
+    Timer7: TTimer;
+    Timer8: TTimer;
+    Timer9: TTimer;
+    ToggleBox1: TToggleBox;
+    TrackBar1: TTrackBar;
+    TrackBar2: TTrackBar;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Timer10Timer(Sender: TObject);
+    procedure Timer11Timer(Sender: TObject);
+    procedure Timer12Timer(Sender: TObject);
+    procedure Timer13Timer(Sender: TObject);
+    procedure Timer14Timer(Sender: TObject);
+    procedure Timer15Timer(Sender: TObject);
+    procedure Timer16Timer(Sender: TObject);
+    procedure Timer17Timer(Sender: TObject);
+    procedure Timer18Timer(Sender: TObject);
+    procedure Timer19Timer(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure Timer20Timer(Sender: TObject);
+    procedure Timer21Timer(Sender: TObject);
+    procedure Timer22Timer(Sender: TObject);
+    procedure Timer23Timer(Sender: TObject);
+    procedure Timer24Timer(Sender: TObject);
+    procedure Timer25Timer(Sender: TObject);
+    procedure Timer26Timer(Sender: TObject);
+    procedure Timer27Timer(Sender: TObject);
+    procedure Timer2Timer(Sender: TObject);
+    procedure Timer3Timer(Sender: TObject);
+    procedure Timer4Timer(Sender: TObject);
+    procedure Timer5Timer(Sender: TObject);
+    procedure Timer6Timer(Sender: TObject);
+    procedure Timer7Timer(Sender: TObject);
+    procedure Timer8Timer(Sender: TObject);
+    procedure Timer9Timer(Sender: TObject);
+    procedure ToggleBox1Change(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
+    procedure TrackBar2Change(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  capt: byte;
+  red, green, blue, i, j, symb, cbsum, lng, quant: integer;
+  password: string;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+begin
+  randomize;
+  capt:=random(10)+1;
+  case capt of
+  1: form1.caption:=('КЛЯТI ILLUMINATI');
+  2: form1.caption:=('шифруй шифруй шифруй');
+  3: form1.caption:=('добро пожаловать в deep web');
+  4: form1.caption:=('Что ты пытаешься скрыть?');
+  5: form1.caption:=('110101001001001010101010010101011001001001');
+  6: form1.caption:=('hackerman');
+  7: form1.caption:=('эй, кулхацкер');
+  8: form1.caption:=('form1.caption');
+  9: form1.caption:=('БОЛЬШЕ ПАРОЛЕЙ БОГУ ПАРОЛЕЙ');
+  10: form1.caption:=('псс, парень, что нибудь зашифровать не хочешь?');
+  end;
+  timer2.enabled:=true;
+  timer1.enabled:=false;
+end;
+
+procedure TForm1.Timer20Timer(Sender: TObject);
+begin
+  image18.visible:=false;
+  image42.visible:=false;
+  image19.visible:=true;
+  image43.visible:=true;
+  timer21.enabled:=true;
+  timer20.enabled:=false;
+end;
+
+procedure TForm1.Timer21Timer(Sender: TObject);
+begin
+  image19.visible:=false;
+  image43.visible:=false;
+  image20.visible:=true;
+  image44.visible:=true;
+  timer22.enabled:=true;
+  timer21.enabled:=false;
+end;
+
+procedure TForm1.Timer22Timer(Sender: TObject);
+begin
+  image20.visible:=false;
+  image44.visible:=false;
+  image21.visible:=true;
+  image45.visible:=true;
+  timer23.enabled:=true;
+  timer22.enabled:=false;
+end;
+
+procedure TForm1.Timer23Timer(Sender: TObject);
+begin
+  image21.visible:=false;
+  image45.visible:=false;
+  image22.visible:=true;
+  image46.visible:=true;
+  timer24.enabled:=true;
+  timer23.enabled:=false;
+end;
+
+procedure TForm1.Timer24Timer(Sender: TObject);
+begin
+  image22.visible:=false;
+  image46.visible:=false;
+  image23.visible:=true;
+  image47.visible:=true;
+  timer25.enabled:=true;
+  timer24.enabled:=false;
+end;
+
+procedure TForm1.Timer25Timer(Sender: TObject);
+begin
+  image23.visible:=false;
+  image47.visible:=false;
+  image24.visible:=true;
+  image48.visible:=true;
+  timer26.enabled:=true;
+  timer25.enabled:=false;
+end;
+
+procedure TForm1.Timer26Timer(Sender: TObject);
+begin
+  image24.visible:=false;
+  image48.visible:=false;
+  image1.visible:=true;
+  image25.visible:=true;
+  timer3.enabled:=true;
+  timer26.enabled:=false;
+end;
+
+procedure TForm1.Timer27Timer(Sender: TObject);
+begin
+  randomize;
+  red:=random(256);
+  green:=random(256);
+  blue:=random(256);
+  label2.font.Color:=rgbtocolor(red, green, blue);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  halt;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  memo1.clear;
+  if ((checkbox1.checked=false) and (checkbox2.checked=false) and (checkbox3.checked=false) and (checkbox4.checked=false) and (checkbox5.checked=false) and (checkbox6.checked=false) and (checkbox7.checked=false)) or ((checkbox1.checked=false) and (checkbox2.checked=false) and (checkbox3.checked=false) and (checkbox4.checked=false) and (checkbox5.checked=false) and (checkbox6.checked=false) and (checkbox7.checked=true)) then
+  begin
+    memo1.lines.addtext('ОШИБКА');
+    memo1.lines.addtext('Пароль не может быть пустым или состоять только из пробелов!');
+  end else
+  if ((checkbox3.checked=true) or (checkbox4.checked=true)) and ((checkbox1.checked=false) and (checkbox2.checked=false)) then
+  begin
+    memo1.lines.addtext('ОШИБКА');
+    memo1.lines.addtext('Вы не выбрали регистры!');
+  end else
+  if ((checkbox1.checked=true) or (checkbox2.checked=true)) and ((checkbox3.checked=false) and (checkbox4.checked=false)) then
+  begin
+    memo1.lines.addtext('ОШИБКА');
+    memo1.lines.addtext('Вы не выбрали наборы букв!');
+  end else
+  begin
+    for i:=1 to quant do
+    begin
+      memo1.lines.AddText('Пароль №'+inttostr(i)+':');
+      repeat
+        symb:=random(156)+1;
+        case symb of
+          1: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'a';
+          2: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'b';
+          3: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'c';
+          4: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'d';
+          5: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'e';
+          6: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'f';
+          7: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'g';
+          8: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'h';
+          9: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'i';
+          10: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'j';
+          11: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'k';
+          12: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'l';
+          13: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'m';
+          14: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'n';
+          15: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'o';
+          16: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'p';
+          17: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'q';
+          18: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'r';
+          19: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'s';
+          20: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'t';
+          21: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'u';
+          22: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'v';
+          23: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'w';
+          24: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'x';
+          25: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'y';
+          26: if (checkbox1.checked=true) and (checkbox4.checked=true) then password:=password+'z';
+          27: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'A';
+          28: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'B';
+          29: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'C';
+          30: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'D';
+          31: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'E';
+          32: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'F';
+          33: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'G';
+          34: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'H';
+          35: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'I';
+          36: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'J';
+          37: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'K';
+          38: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'L';
+          39: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'M';
+          40: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'N';
+          41: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'O';
+          42: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'P';
+          43: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'Q';
+          44: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'R';
+          45: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'S';
+          46: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'T';
+          47: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'U';
+          48: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'V';
+          49: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'W';
+          50: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'X';
+          51: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'Y';
+          52: if (checkbox2.checked=true) and (checkbox4.checked=true) then password:=password+'Z';
+          53: if checkbox5.checked=true then password:=password+'0';
+          54: if checkbox5.checked=true then password:=password+'1';
+          55: if checkbox5.checked=true then password:=password+'2';
+          56: if checkbox5.checked=true then password:=password+'3';
+          57: if checkbox5.checked=true then password:=password+'4';
+          58: if checkbox5.checked=true then password:=password+'5';
+          59: if checkbox5.checked=true then password:=password+'6';
+          60: if checkbox5.checked=true then password:=password+'7';
+          61: if checkbox5.checked=true then password:=password+'8';
+          62: if checkbox5.checked=true then password:=password+'9';
+          63: if checkbox6.checked=true then password:=password+'!';
+          64: if checkbox6.checked=true then password:=password+'"';
+          65: if checkbox6.checked=true then password:=password+'@';
+          66: if checkbox6.checked=true then password:=password+'№';
+          67: if checkbox6.checked=true then password:=password+'#';
+          68: if checkbox6.checked=true then password:=password+';';
+          69: if checkbox6.checked=true then password:=password+'$';
+          70: if checkbox6.checked=true then password:=password+'%';
+          71: if checkbox6.checked=true then password:=password+':';
+          72: if checkbox6.checked=true then password:=password+'^';
+          73: if checkbox6.checked=true then password:=password+'?';
+          74: if checkbox6.checked=true then password:=password+'&';
+          75: if checkbox6.checked=true then password:=password+'*';
+          76: if checkbox6.checked=true then password:=password+'(';
+          77: if checkbox6.checked=true then password:=password+')';
+          78: if checkbox6.checked=true then password:=password+'_';
+          79: if checkbox6.checked=true then password:=password+'-';
+          80: if checkbox6.checked=true then password:=password+'+';
+          81: if checkbox6.checked=true then password:=password+'=';
+          82: if checkbox6.checked=true then password:=password+'\';
+          83: if checkbox6.checked=true then password:=password+'/';
+          84: if checkbox6.checked=true then password:=password+'<';
+          85: if checkbox6.checked=true then password:=password+'>';
+          86: if checkbox6.checked=true then password:=password+',';
+          87: if checkbox6.checked=true then password:=password+'.';
+          88: if checkbox6.checked=true then password:=password+'`';
+          89: if checkbox6.checked=true then password:=password+'~';
+          90: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'а';
+          91: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'б';
+          92: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'в';
+          93: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'г';
+          94: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'д';
+          95: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'е';
+          96: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ё';
+          97: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ж';
+          98: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'з';
+          99: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'и';
+          100: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'й';
+          101: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'к';
+          102: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'л';
+          103: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'м';
+          104: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'н';
+          105: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'о';
+          106: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'п';
+          107: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'р';
+          108: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'с';
+          109: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'т';
+          110: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'у';
+          111: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ф';
+          112: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'х';
+          113: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ц';
+          114: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ч';
+          115: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ш';
+          116: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'щ';
+          117: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ъ';
+          118: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ы';
+          119: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ь';
+          120: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'э';
+          121: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'ю';
+          122: if (checkbox1.checked=true) and (checkbox3.checked=true) then password:=password+'я';
+          123: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'А';
+          124: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Б';
+          125: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'В';
+          126: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Г';
+          127: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Д';
+          128: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Е';
+          129: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ё';
+          130: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ж';
+          131: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'З';
+          132: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'И';
+          133: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Й';
+          134: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'К';
+          135: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Л';
+          136: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'М';
+          137: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Н';
+          138: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'О';
+          139: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'П';
+          140: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Р';
+          141: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'С';
+          142: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Т';
+          143: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'У';
+          144: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ф';
+          145: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Х';
+          146: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ц';
+          147: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ч';
+          148: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ш';
+          149: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Щ';
+          150: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ъ';
+          151: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ы';
+          152: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ь';
+          153: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Э';
+          154: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Ю';
+          155: if (checkbox2.checked=true) and (checkbox3.checked=true) then password:=password+'Я';
+          156: if checkbox7.checked=true then password:=password+' ';
+        end;
+      until length(Password)=lng;
+      memo1.lines.addtext(Password);
+      memo1.lines.addtext(#13);
+    end;
+  end;
+  password:='';
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  memo1.clear;
+  memo1.lines.addtext('Вас приветствует Генератор паролей (Illuminati version).');
+  memo1.lines.addtext('Для того, чтобы сгенерировать пароль, установите настройки выше и нажмите кнопку ГЕНЕРИРОВАТЬ ниже.');
+  memo1.lines.addtext('Если вам мешают эти украшательства сверху, их можно спрятать, нажав на кнопку СиП снизу.');
+  memo1.lines.addtext(#13);
+  memo1.lines.addtext('При генерации пароля это поле будет очищено, поэтому для того, чтобы снова увидеть этот текст, вам необходимо будет нажать кнопку Помощь.');
+  memo1.lines.addtext(#13);
+  memo1.lines.addtext('Принимаются донаты на следующие биткоин-кошельки:');
+  memo1.lines.addtext('14kPqQC1Ht7yTPwJoPuf8UB79t5kuccGas');
+  memo1.lines.addtext('12pWSBvbEJJPQCrjF9twy6F9ozfhnFgUBJ');
+  memo1.lines.addtext('19sntC7p4yXUU5qWPNSHwj4UHe2beZHXVw');
+  memo1.lines.addtext('135JfrHUeSY6HCiKZGC2S9es9juEQ9mQts');
+  memo1.lines.addtext('1dWiZ99nZgtzjNgKyvd7pzfrQgjLLxr6n');
+  memo1.lines.addtext(#13);
+  memo1.lines.addtext('(c) 2017');
+end;
+
+procedure TForm1.Timer10Timer(Sender: TObject);
+begin
+  image8.visible:=false;
+  image32.visible:=false;
+  image9.visible:=true;
+  image33.visible:=true;
+  timer11.enabled:=true;
+  timer10.enabled:=false;
+end;
+
+procedure TForm1.Timer11Timer(Sender: TObject);
+begin
+  image9.visible:=false;
+  image33.visible:=false;
+  image10.visible:=true;
+  image34.visible:=true;
+  timer12.enabled:=true;
+  timer11.enabled:=false;
+end;
+
+procedure TForm1.Timer12Timer(Sender: TObject);
+begin
+  image10.visible:=false;
+  image34.visible:=false;
+  image11.visible:=true;
+  image35.visible:=true;
+  timer13.enabled:=true;
+  timer12.enabled:=false;
+end;
+
+procedure TForm1.Timer13Timer(Sender: TObject);
+begin
+  image11.visible:=false;
+  image35.visible:=false;
+  image12.visible:=true;
+  image36.visible:=true;
+  timer14.enabled:=true;
+  timer13.enabled:=false;
+end;
+
+procedure TForm1.Timer14Timer(Sender: TObject);
+begin
+  image12.visible:=false;
+  image36.visible:=false;
+  image13.visible:=true;
+  image37.visible:=true;
+  timer15.enabled:=true;
+  timer14.enabled:=false;
+end;
+
+procedure TForm1.Timer15Timer(Sender: TObject);
+begin
+  image13.visible:=false;
+  image37.visible:=false;
+  image14.visible:=true;
+  image38.visible:=true;
+  timer16.enabled:=true;
+  timer15.enabled:=false;
+end;
+
+procedure TForm1.Timer16Timer(Sender: TObject);
+begin
+  image14.visible:=false;
+  image38.visible:=false;
+  image15.visible:=true;
+  image39.visible:=true;
+  timer17.enabled:=true;
+  timer16.enabled:=false;
+end;
+
+procedure TForm1.Timer17Timer(Sender: TObject);
+begin
+  image15.visible:=false;
+  image39.visible:=false;
+  image16.visible:=true;
+  image40.visible:=true;
+  timer18.enabled:=true;
+  timer17.enabled:=false;
+end;
+
+procedure TForm1.Timer18Timer(Sender: TObject);
+begin
+  image16.visible:=false;
+  image40.visible:=false;
+  image17.visible:=true;
+  image41.visible:=true;
+  timer19.enabled:=true;
+  timer18.enabled:=false;
+end;
+
+procedure TForm1.Timer19Timer(Sender: TObject);
+begin
+  image17.visible:=false;
+  image41.visible:=false;
+  image18.visible:=true;
+  image42.visible:=true;
+  timer20.enabled:=true;
+  timer19.enabled:=false;
+end;
+
+procedure TForm1.Timer2Timer(Sender: TObject);
+begin
+  form1.caption:=('Генератор паролей');
+  timer1.enabled:=true;
+  timer2.enabled:=false;
+end;
+
+procedure TForm1.Timer3Timer(Sender: TObject);
+begin
+  image1.visible:=false;
+  image25.visible:=false;
+  image2.visible:=true;
+  image26.visible:=true;
+  timer4.enabled:=true;
+  timer3.enabled:=false;
+end;
+
+procedure TForm1.Timer4Timer(Sender: TObject);
+begin
+  image2.visible:=false;
+  image26.visible:=false;
+  image3.visible:=true;
+  image27.visible:=true;
+  timer5.enabled:=true;
+  timer4.enabled:=false;
+end;
+
+procedure TForm1.Timer5Timer(Sender: TObject);
+begin
+  image3.visible:=false;
+  image27.visible:=false;
+  image4.visible:=true;
+  image28.visible:=true;
+  timer6.enabled:=true;
+  timer5.enabled:=false;
+end;
+
+procedure TForm1.Timer6Timer(Sender: TObject);
+begin
+  image4.visible:=false;
+  image28.visible:=false;
+  image5.visible:=true;
+  image29.visible:=true;
+  timer7.enabled:=true;
+  timer6.enabled:=false;
+end;
+
+procedure TForm1.Timer7Timer(Sender: TObject);
+begin
+  image5.visible:=false;
+  image29.visible:=false;
+  image6.visible:=true;
+  image30.visible:=true;
+  timer8.enabled:=true;
+  timer7.enabled:=false;
+end;
+
+procedure TForm1.Timer8Timer(Sender: TObject);
+begin
+  image6.visible:=false;
+  image30.visible:=false;
+  image7.visible:=true;
+  image31.visible:=true;
+  timer9.enabled:=true;
+  timer8.enabled:=false;
+end;
+
+procedure TForm1.Timer9Timer(Sender: TObject);
+begin
+  image7.visible:=false;
+  image31.visible:=false;
+  image8.visible:=true;
+  image32.visible:=true;
+  timer10.enabled:=true;
+  timer9.enabled:=false;
+end;
+
+procedure TForm1.ToggleBox1Change(Sender: TObject);
+begin
+  if ToggleBox1.Checked=true then
+  begin
+    timer1.enabled:=true;
+    timer3.enabled:=true;
+    timer27.enabled:=true;
+    label2.visible:=true;
+  end else
+  begin
+    form1.caption:=('Генератор паролей');
+    timer1.enabled:=false;
+    timer2.enabled:=false;
+    timer3.enabled:=false;
+    timer4.enabled:=false;
+    timer5.enabled:=false;
+    timer6.enabled:=false;
+    timer7.enabled:=false;
+    timer8.enabled:=false;
+    timer9.enabled:=false;
+    timer10.enabled:=false;
+    timer11.enabled:=false;
+    timer12.enabled:=false;
+    timer13.enabled:=false;
+    timer14.enabled:=false;
+    timer15.enabled:=false;
+    timer16.enabled:=false;
+    timer17.enabled:=false;
+    timer18.enabled:=false;
+    timer19.enabled:=false;
+    timer20.enabled:=false;
+    timer21.enabled:=false;
+    timer22.enabled:=false;
+    timer23.enabled:=false;
+    timer24.enabled:=false;
+    timer25.enabled:=false;
+    timer26.enabled:=false;
+    timer27.enabled:=false;
+    label2.visible:=false;
+    image1.visible:=false;
+    image2.visible:=false;
+    image3.visible:=false;
+    image4.visible:=false;
+    image5.visible:=false;
+    image6.visible:=false;
+    image7.visible:=false;
+    image8.visible:=false;
+    image9.visible:=false;
+    image10.visible:=false;
+    image11.visible:=false;
+    image12.visible:=false;
+    image13.visible:=false;
+    image14.visible:=false;
+    image15.visible:=false;
+    image16.visible:=false;
+    image17.visible:=false;
+    image18.visible:=false;
+    image19.visible:=false;
+    image20.visible:=false;
+    image21.visible:=false;
+    image22.visible:=false;
+    image23.visible:=false;
+    image24.visible:=false;
+    image25.visible:=false;
+    image26.visible:=false;
+    image27.visible:=false;
+    image28.visible:=false;
+    image29.visible:=false;
+    image30.visible:=false;
+    image31.visible:=false;
+    image32.visible:=false;
+    image33.visible:=false;
+    image34.visible:=false;
+    image35.visible:=false;
+    image36.visible:=false;
+    image37.visible:=false;
+    image38.visible:=false;
+    image39.visible:=false;
+    image40.visible:=false;
+    image41.visible:=false;
+    image42.visible:=false;
+    image43.visible:=false;
+    image44.visible:=false;
+    image45.visible:=false;
+    image46.visible:=false;
+    image47.visible:=false;
+    image48.visible:=false;
+  end;
+end;
+
+procedure TForm1.TrackBar1Change(Sender: TObject);
+begin
+  lng:=trackbar1.position;
+  Label4.caption:=inttostr(lng);
+end;
+
+procedure TForm1.TrackBar2Change(Sender: TObject);
+begin
+  quant:=trackbar2.position;
+  label5.caption:=inttostr(quant);
+end;
+
+
+
+end.
+

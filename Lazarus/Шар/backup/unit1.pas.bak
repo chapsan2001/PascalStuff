@@ -1,0 +1,84 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  ExtCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Image1: TImage;
+    Image2: TImage;
+    Label2: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  otvet: byte;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  randomize;
+  otvet:=random(15);
+  image1.visible:=false;
+  image2.visible:=true;
+  if otvet=0 then
+  label2.caption:=('  Нет ');
+  if otvet=1 then
+  label2.caption:=('  Да ');
+  if otvet=2 then
+  label2.caption:=(' Можешь'+#13+'не сомне-'+#13+' ваться ');
+  if otvet=3 then
+  label2.caption:=('  Весьма '+#13+' сомни-'+#13+' тельно ');
+  if otvet=4 then
+  label2.caption:=(' Сконцен- '+#13+'трируйся и'+#13+'спроси опять ');
+  if otvet=5 then
+  label2.caption:=(' Мои ис- '+#13+'точники'+#13+'говорят да ');
+  if otvet=6 then
+  label2.caption:=(' Мои ис- '+#13+'точники'+#13'говорят нет ');
+  if otvet=7 then
+  label2.caption:=('  Не могу '+#13+'  предска-'+#13+'    зать ');
+  if otvet=8 then
+  label2.caption:=('Вероятнее '+#13+'   всего ');
+  if otvet=9 then
+  label2.caption:=('Абсолютно '+#13+'   точно ');
+  if otvet=10 then
+  label2.caption:=(' Бесспорно ');
+  if otvet=11 then
+  label2.caption:=('    Cпроси '+#13+'     позже ');
+  if otvet=12 then
+  label2.caption:=('Даже не '+#13+' думай ');
+  if otvet=13 then
+  label2.caption:=(' Перспек- '+#13+'  тивы не'+#13+'очень хорошие ');
+  if otvet=14 then
+  label2.caption:=(' Перспек- '+#13+'   тивы '+#13+'очень хорошие ');
+  if otvet=15 then
+  label2.caption:=(' Никаких '+#13+'сомнений ')
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Showmessage('Задайте мне вопрос, на который'+#13+'можно ответить "Да" или "Нет".')
+end;
+
+end.
+

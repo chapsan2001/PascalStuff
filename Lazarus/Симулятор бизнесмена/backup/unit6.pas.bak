@@ -1,0 +1,76 @@
+unit Unit6;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TForm6 }
+
+  TForm6 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Label1: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm6 }
+
+procedure TForm6.Button3Click(Sender: TObject);
+begin
+  Showmessage('Найди тему "Businessmen Simulator" и сообщи в ней то, что тебе нужно сообщить.');
+  form6.Hide;
+  ExecuteProcess('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe','vk.com/chapsanschannel');
+end;
+
+procedure TForm6.Button4Click(Sender: TObject);
+begin
+  form6.Hide;
+  showmessage('Если хочешь попасть в группу, то открой свой браузер и введи следующий адрес: vk.com/chapsanschannel Там ты сможешь сообщить об отсутствии твоего браузера в списке через тему "Businessmen Simulator"')
+end;
+
+procedure TForm6.Button5Click(Sender: TObject);
+begin
+  Showmessage('Найди тему "Businessmen Simulator" и сообщи в ней то, что тебе нужно сообщить.');
+  form6.Hide;
+  Showmessage('Пути пока нет, но можно вручную перейти по ссылке vk.com/chapsanschannel');
+end;
+
+procedure TForm6.Button1Click(Sender: TObject);
+begin
+  Showmessage('Найди тему "Businessmen Simulator" и сообщи в ней то, что тебе нужно сообщить.');
+  form6.Hide;
+  ExecuteProcess('C:\Program Files (x86)\Internet Explorer\iexplore.exe','vk.com/chapsanschannel');
+end;
+
+procedure TForm6.Button2Click(Sender: TObject);
+begin
+  Showmessage('Найди тему "Businessmen Simulator" и сообщи в ней то, что тебе нужно сообщить.');
+  form6.Hide;
+  ExecuteProcess('C:\Program files (x86)\Mozilla Firefox\firefox.exe','vk.com/chapsanschannel');
+end;
+
+end.
+

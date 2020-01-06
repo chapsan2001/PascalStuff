@@ -1,0 +1,12 @@
+object Form1: TForm1
+  Left = 279
+  Height = 240
+  Top = 144
+  Width = 320
+  Caption = 'Form1'
+  OnClick = FormClick
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  LCLVersion = '1.0.1.3'
+end
